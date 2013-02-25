@@ -68,7 +68,6 @@ js/libs/backbone/backbone.collection_view.js
 js/views/youtube_search_results.js
 text!templates/youtube_playlist_item.html
 js/views/youtube_playlist_item.js
-js/libs/utils.js
 js/models/youtube_playlist_item.js
 js/collections/youtube_playlists_results.js
 js/views/youtube_playlists_results.js
@@ -83,6 +82,7 @@ js/models/youtube_user_playlist_item.js
 js/collections/youtube_playlists_provider.js
 js/views/youtube_playlists_provider.js
 js/views/user_profile_manager.js
+js/libs/utils.js
 js/collections/history_playlist.js
 js/views/player_app.js
 js/models/user_profile_manager.js
