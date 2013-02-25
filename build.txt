@@ -15,15 +15,29 @@ css/bootstrap.min.css
 ----------------
 css/bootstrap.min.css
 
+css/font-awesome.css
+----------------
+css/font-awesome.css
+
+css/font-awesome.min.css
+----------------
+css/font-awesome.min.css
+
+css/modules/bootstrap-dropdown-animated.css
+----------------
+css/modules/bootstrap-dropdown-animated.css
+
+css/modules.css
+----------------
+css/modules.css
+
 css/style.css
 ----------------
 css/bootstrap.min.css
 css/bootstrap-responsive.min.css
+css/font-awesome.css
+css/modules.css
 css/style.css
-
-css/vanilla.css
-----------------
-css/vanilla.css
 
 templates/youtube_custom_styles.css
 ----------------
@@ -40,7 +54,6 @@ js/libs/bootstrap/bootstrap.js
 js/libs/underscore/underscore.js
 js/libs/backbone/backbone.js
 js/libs/backbone/backbone.safe.js
-js/libs/utils.js
 js/views/media_search.js
 js/views/youtube/track_info.js
 js/views/youtube/playlist_info.js
@@ -55,6 +68,7 @@ js/libs/backbone/backbone.collection_view.js
 js/views/youtube_search_results.js
 text!templates/youtube_playlist_item.html
 js/views/youtube_playlist_item.js
+js/libs/utils.js
 js/models/youtube_playlist_item.js
 js/collections/youtube_playlists_results.js
 js/views/youtube_playlists_results.js
