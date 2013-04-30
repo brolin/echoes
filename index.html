@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Facebook Insights -->
+	<meta property="fb:admins" content="754318072">
+	<meta property="fb:app_id" content="277907182339554">
 
 	<title>Echoes Media Center ~=~ EMC</title>
 	<meta name="description" content="Media Player built upon various media services">
@@ -18,10 +21,19 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Asap|Comfortaa:700|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<!-- Facebook Integration -->
+	<div id="fb-root"></div>
+	<script>
+	(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=277907182339554";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
 
 		<!-- TOP NAVIGATION BAR -->
 		<div class="navbar navbar-inverse navbar-fixed-top">
@@ -47,7 +59,7 @@
 									<i class="icon-film"></i>Join Youtube's HTML5 Trial</a></li>
 								<!-- <li><a href="#">Profile</a></li> -->
 								<!-- <li class="divider"></li> -->
-								<li><a href="#user-sign-in" class="sign-in">
+								<li><a href="#replaced-with-js-view" class="sign-in">
 									<i class="icon-lock"></i>Sign In</a></li>
 								<li><a href="#user-sign-out" class="sign-out">Sign Out</a></li>
 							</ul>
@@ -61,7 +73,7 @@
 							<!-- SEARCH FORM -->
 							<li>
 								<form class="navbar-form form-search" id="media-explorer">
-									<input placeholder="Explore My Media" id="media-search" type="search" class="input-medium span4">
+									<input placeholder="Explore My Media" id="media-search" type="search" class="input-medium search-query span4">
 									<i class="icon-search"></i>
 								</form>
 							</li>
@@ -69,7 +81,7 @@
 							<!-- SEARCH FILTER -->
 							<li>
 								
-								<div id="feed-filter" class="btn-group feed-filters">
+								<div id="feed-filter" class="feed-filters">
 									<a class="btn btn-inverse videos" href="#filter/videos" title="Explore Videos">
 										<i class="icon-film"></i> Videos
 									</a>
@@ -108,12 +120,13 @@
 		</div>
 
 		<!-- YOUTUBE PLAYER -->
-		<div id="youtube-player-container" class="navbar navbar-inverse navbar-fixed-bottom youtube-player">
+		<div id="youtube-player-container" class="navbar navbar-inverse navbar-fixed-bottom youtube-player hide-volume">
 			<div class="navbar-inner">
 				
 				<div class="container-fluid">
 					
 					<div class="yt-player ux-maker">
+						<div id="facebook-like" class="facebook-like"></div>
 						<div id="player"></div>
 					</div>
 					
@@ -183,14 +196,14 @@
 						<ul class="nav">
 							<li>
 								<div class="current-track-info current-playlist-info pull-right">
-									<div class="btn-group dropup">
+									<div class="dropup">
 									  <button class="btn btn-info dropdown-toggle" title="Current Playlist" data-toggle="dropdown">
 									  	<span class="yt-playlist-title"><i class="icon-th-list"></i></span>
 									    <span class="caret"></span>
 									  </button>
-									  <ul class="dropdown-menu playlist-info">
-									    
-									  </ul>
+									  <div class="dropdown-menu">
+									  	<ul class="unstyled playlist-info"></ul>
+									  </div>
 									</div>
 								</div>
 							</li>
@@ -199,13 +212,13 @@
 
 							<li>
 								<div class="current-track-info current-track-info-container pull-right">
-									<div class="btn-group dropup">
+									<div class="dropup">
 									  <button class="btn btn-info dropdown-toggle" title="Currently Playing" data-toggle="dropdown">
 									  	<span class="yt-media-title">no media yet...</span>
 									    <span class="caret"></span>
 									  </button>
-									  <div class="dropdown-menu track-info">
-									    
+									  <div class="dropdown-menu">
+									    	<div class="track-info"></div>
 									  </div>
 									</div>
 								</div>
@@ -228,7 +241,7 @@
 			</ul>
 			
 			<div class="sidebar-pane flex-container">
-				<h3 class="nav-header">Playlists <i class="icon-plus-sign pull-right"></i></h3>
+				<h3 class="nav-header">Playlists</h3>
 				<ul id="user-playlists" class="nav nav-list nicer-ux user-playlists"></ul>
 			</div>
 		
@@ -243,7 +256,7 @@
 
 					<!-- SEARCH RESULTS AREA -->
 					<div id="search-results" class="clearfix">
-						<div class="well span12">
+						<div class="well span12 progress-intro">
 							<div class="progress progress-striped active">
 							  <div class="bar" style="width: 40%;"></div>
 							</div>
@@ -266,16 +279,17 @@
 	  </div>
 	  <div class="modal-body">
 	    <p>
-	    	Please make sure you're opt in to <a href="http://youtube.com/html5" target="_blank">youtube's html5 trial</a><br>
+	    	To have the <span class="label label-success">BEST</span> experience, it is better to opt in to <a href="http://youtube.com/html5" target="_blank">youtube's html5 trial</a><br>
 	    	After joining Youtube's html5 trial, refresh this page.
 	    </p>
 	  </div>
 	  <div class="modal-footer">
-	    <a href="#" class="btn" data-dismiss="modal">Close</a>
-	    <a href="#" class="btn btn-primary dont-remind">OK, Don't remind me the next time</a>
+	    <button class="btn" data-dismiss="modal">Close</button>
+	    <button class="btn btn-primary dont-remind">OK, Don't remind me the next time</button>
 	  </div>
 	</div>
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script> -->
+	
 	<script data-main="js/config" src="js/libs/require/require.js"></script>
 	<script type="text/javascript">
 
