@@ -1,0 +1,1 @@
+define(["backbone","models/youtube/YoutubePlaylistItemsService","models/youtube/PlaylistsService"],function(e,t,n){var r=e.Collection.extend({model:t,factory:new n,insert:function(e,t){console.log(e)},create:function(e){this.factory.get("resource").snippet.title=e.title,this.factory.create(),this.factory.set(this.factory.defaults,{silent:!0})}});return r});
