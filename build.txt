@@ -27,10 +27,6 @@ css/modules/bootstrap-dropdown-animated.css
 ----------------
 css/modules/bootstrap-dropdown-animated.css
 
-css/modules/Container.css
-----------------
-css/modules/Container.css
-
 css/modules.css
 ----------------
 css/modules.css
