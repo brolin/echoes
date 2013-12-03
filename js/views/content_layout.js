@@ -1,1 +1,1 @@
-define(["jquery","underscore","backbone","views/youtube_search_results","views/youtube_playlists_results"],function(e,t,n,r,i){var s=n.View.extend({el:"#search-results",switcher:{key:"filter",transition:{cssIn:"transition-in"},views:{videos:r,playlists:i}}});return s});
+define(["jquery","underscore","backbone","views/youtube_search_results","views/youtube_playlists_results"],function(e,t,n,r,i){var s=n.View.extend({el:"#search-results",switcher:{key:"layout",transition:{cssIn:"transition-in"},views:{videos:r,playlists:i}}});return s});
