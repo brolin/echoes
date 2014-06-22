@@ -1,1 +1,1 @@
-function e(){}e.prototype.persistFavoriteStatus=function(e){throw new Error("not yet implemented")};
+function Song(){}Song.prototype.persistFavoriteStatus=function(){throw new Error("not yet implemented")};

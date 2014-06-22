@@ -1,1 +1,1 @@
-define(["facebook"],function(){FB.init({appId:"277907182339554"})});
+define(["facebook"],function(i){i&&i.init({appId:"277907182339554"})});

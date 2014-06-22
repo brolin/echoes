@@ -21,16 +21,20 @@
             	<div class="badge badge-info badge-desc">videos</div>
             </aside> -->
 
-          <img src="<%= thumbnail.hqDefault %>">
+          <img src="<%= thumbnail %>">
         </div>
 
-        <button class="btn btn-mini btn-info play-media">Play Now</button>
+        <button class="btn btn-large play-media">
+            <i class="icon-play"></i>
+        </button>
 
     </a>
 </section>
 
 <section class="item-actions">
     
-    <a href="#playlist/<%= id %>"><span class="item-action"><i class="icon-list"></i></a> <span class="badge badge-info"><%= size %></span> videos</span>
+    <a href="#playlist/<%= id %>">
+        <span class="item-action badge badge-info"><i class="icon-list"></i> <%= size %></span> videos</span>
+    </a> 
 
 </section>

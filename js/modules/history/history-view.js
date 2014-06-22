@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone","views/youtube_item"],function(e,i,n,t){var r=t.extend({initialize:function(){this.listenTo(this.model,"change",this.render)}});return r});

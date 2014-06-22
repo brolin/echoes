@@ -1,1 +1,1 @@
-define(["underscore","backbone"],function(e,t){var n=t.Model.extend({defaults:{isPlaying:!1}});return n});
+define(["underscore","backbone"],function(e,n){var t=n.Model.extend({defaults:{isPlaying:!1},getThumbnail:function(){var e=this.attributes.thumbnail,n=e&&e.hqDefault||"";return n}});return t});
