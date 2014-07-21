@@ -54,6 +54,7 @@ js/libs/backbone/backbone.CollectionView.js
 js/libs/backbone/backbone.view-transition.js
 js/libs/backbone/backbone.switcher.js
 js/libs/backbone/backbone.safe.js
+js/libs/backbone/backbone.Timber.js
 js/libs/utils.js
 js/libs/backbone/backbonepkg.js
 js/views/media_search.js
@@ -93,10 +94,10 @@ js/fb.js
 text!templates/facebook_like_tag.html
 js/views/facebook/facebook_like_view.js
 text!templates/playlist-search.html
-js/views/playlists-viewer/playlist_search.js
+js/views/add-to-playlists/playlist-search.js
 text!templates/youtube_playlist_list_item.html
-js/views/playlists-viewer/playlists_list.js
-js/views/youtube/PlaylistsViewer.js
+js/views/add-to-playlists/playlists-list.js
+js/views/add-to-playlists/add-to-playlists.js
 js/modules/sidebar/sidebar-view.js
 js/views/Loader.js
 js/views/infinite_scroller.js
@@ -109,7 +110,6 @@ js/modules/duration/duration.view.js
 text!modules/updates/updates-message.html
 js/modules/updates/updates-view.js
 js/views/player_app.js
-js/models/user_profile_manager.js
 js/models/youtube_item_info.js
 js/models/gapi.js
 js/models/youtube/ProfileService.js

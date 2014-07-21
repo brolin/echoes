@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbonesrc"],function(){var e=this._,n=this.Backbone;if(e&&n&&JSON){var r=r||{};r.module=function(e,r){return{create:function(i,o){var c=n[e].extend(r),t={model:i};return o&&(t.collection=o),new c(t)}}},window.Timber=window.Timber||r,n.Timber=r}});
