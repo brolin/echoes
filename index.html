@@ -12,7 +12,7 @@
 	<meta name="google-signin-requestvisibleactions" content="http://schemas.google.com/AddActivity">
 	<meta name="google-signin-cookiepolicy" content="single_host_origin">
 
-	<title>Echoes Media Center ~=~ EMC</title>
+	<title>Casas de música player - powered by echotu.be</title>
 	<meta name="description" content="Alternative to youtube, Media Player which with a great ux for playing youtube videos">
 	<meta name="author" content="Oren Farhi">
 	<link type="image/x-icon" rel="shortcut icon" href="img/noun_project_220.ico">
@@ -27,113 +27,42 @@
 	<link href='http://fonts.googleapis.com/css?family=Asap|Comfortaa:700|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/flick/jquery-ui.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--        Bootstrap core CSS-->
+  <link href="/cm/styles/bootstrap.css" rel="stylesheet">
+  <link href="/cm/styles/bootstrap-select.css" rel="stylesheet">
+  <link href="/cm/styles/bootstrap-tagsinput.css" rel="stylesheet">
+  <link href="/cm/styles/datepicker3.css" rel="stylesheet">
+  <!--        Custom CSS for the 'Heroic Features' Template-->
+  <link href="/cm/styles/heroic-features.css" rel="stylesheet"></head>
 </head>
 <body>
-		<!-- TOP NAVIGATION BAR -->
-		<div class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container-fluid">
-					<a class="brand" href="#explore">Ech<i class="icon-headphones"></i>es</a>
-					 
-					 <!-- User Profile -->
-					 <ul id="user-profile" class="nav pull-right user-profile">
-						<li>
-						 	<a href="#" class="facebook-page brand"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fechoesplayer&amp;width=50&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=683337491728445" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe></a>
-						</li>
 
-						<li class="dropdown">	
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-								<i class="icon-user"></i>
-								<span class="username">Username</span>
-								<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="http://youtube.com/html5" target="_blank">
-									<i class="icon-film"></i> Join Youtube's HTML5 Trial</a></li>
-								<li>
-									<a href="http://github.com/orizens/echoes" target="_blank">
-									<i class="icon-github"></i> About Echoes</a>
-								</li>
-								<li>
-									<a href="/updates/latest.json" target="_blank" class="action">
-									<i class="icon-cloud-upload"></i> Check For Updates</a>
-								</li>
-								<li><a href="#replaced-with-js-view" class="sign-in">
-									<i class="icon-google-plus"></i> Sign In</a></li>
-								<li>
-									<a href="#user-sign-out" class="sign-out">
-										<i class="icon-off"></i> Sign Out
-									</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-
-					<ul class="nav">
-						
-						<!-- SEARCH FORM -->
-						<li>
-							<form class="navbar-form form-search" id="media-explorer">
-								<input placeholder="Explore My Media" id="media-search" type="search" class="input-medium search-query span3">
-								<i class="icon-search"></i>
-							</form>
-						</li>
-
-					</ul>
-					<button id="filters-collapse-btn" type="button" class="btn btn-success" data-toggle="collapse" data-target=".nav-collapse">
-		            	<i class="icon icon-filter"></i> <span>Filters</span>
-			        </button>
-					<div class="nav-collapse">
-						
-						<ul id="feed-filter" class="nav">
-							<li class="videos">
-								<a href="#filter/videos" data-preset="1" title="Explore Videos">
-									<i class="icon-film"></i> Videos
-								</a>
-							</li>
-							<li class="playlists">
-								<a href="#filter/playlists" data-preset="2" title="Explore Playlists">
-									<i class="icon-th-list"></i> Playlists
-								</a>
-							</li>
-							<!-- SEARCH FILTER -->
-						<!-- 	<li>
-								
-								<div id="feed-filter" class="feed-filters">
-									<a class="btn videos" href="#filter/videos" title="Explore Videos">
-										<i class="icon-film"></i> Videos
-									</a>
-									<a class="btn playlists" href="#filter/playlists" title="Explore Playlists">
-										<i class="icon-th-list"></i> Playlists
-									</a>
-								</div>
-
-							</li> -->
-
-						</ul>
-						
-						<ul class="nav" id="search-presets"></ul>
-						
-						<ul class="nav" id="duration-picker">
-							<li class="dropdown">	
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-									<i class="icon-time"></i> Duration
-									<span class="caret"></span>
-								</a>
-								<ul class="dropdown-menu"></ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="#">Casas de Música</a>
+        <ul class="nav">
+          <li class="active"><a href="#">Inicio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron hero-spacer"><div class="h2">¿Sabías que todos podemos aprender música en Medellín?</div>
+        <div class="h3">Si tienes entre 7 y 18 años, y eres de los que sigue el ritmo con los pies cuando escuchas una canción, esto puede interesarte:</div>
+        <div class="h4">Medellín vive la música te ofrece el espacio para encontrarte con otras personas como tu que quieren crear su propio ritmo.</div>
+        <div class="p"><br></div>
+        <div class="h4">Acércate a tu sede más cercana y participa de nuestros encuentros de música, ensamble y creación. Asiste a tu primera clase y empieza tu travesía con nosotros en el universo Medellín Vive la Música.
+          <div class="h3">Sedes disponibles:</div>
+          <div class="col-md-12"><select name="nodos" value="" data-live-search="true" data-container="body" class="selectpicker col-md-12"><option data-id="5366bd7d3a945ecb4d8d9070">UVA de los Sueños (Comuna 3 - Manrique)</option><option data-id="5366bd7d3a945ecb4d8d9071">UVA de la Esperanza (Comuna 1 - Popular)</option><option data-id="5366bd7d3a945ecb4d8d9072">Centro de Desarrollo Cultural de Moravia (Comuna 4)</option><option data-id="5366bd7d3a945ecb4d8d9073">Centro de Desarrollo Cultural Los Colores (Comuna 11)</option><option data-id="5366bd7d3a945ecb4d8d9075">Parque Biblioteca de Belén (Comuna 16)</option><option data-id="5366bd7d3a945ecb4d8d9076">Parque Biblioteca Manuel Mejía Vallejo (Comuna 15-Guayabal)</option><option data-id="5366bd7d3a945ecb4d8d9078">Casa de la Cultura Alcázares (Comuna 13 - LASO)</option><option data-id="5366bd7d3a945ecb4d8d9079">Museo Casa de la Memoria (Comuna 10 - Parque Bicentenario)</option><option data-id="5366bd7d3a945ecb4d8d907a">Parque Biblioteca San Cristóbal (Corregimiento San Cristobal)</option><option data-id="5366bd7d3a945ecb4d8d907b">Parque Biblioteca 12 de Octubre (Comuna 6)</option><option data-id="5366bd7d3a945ecb4d8d907c">Teatro al Aire Libre Pedregal (Comuna 6 - LASO)</option><option data-id="5366bd7d3a945ecb4d8d907e">Casa Gardeliana (Comuna 3 - Manrique)</option><option data-id="5366bd7d3a945ecb4d8d907f">Corporación Nuestra Gente (Comuna 2 - Santa Cruz)</option><option data-id="538ccc33e148ba062273ddfd">Parque Biblioteca León de Greiff</option></select></div></div></div></div>
 		<!-- YOUTUBE PLAYER -->
 		<div id="youtube-player-container" class="navbar navbar-inverse navbar-fixed-bottom youtube-player hide-volume">
 			<div class="navbar-inner">
-				
+
 				<div class="container-fluid">
-					
+
 					<div class="yt-player ux-maker">
 						<div id="gp-share" class="pull-left">
 							<a href="" title="Share Now Playing Media With Your Circles"><img
@@ -142,10 +71,10 @@
 						<div id="facebook-like" class="facebook-like pull-left"></div>
 						<div id="player"></div>
 					</div>
-					
+
 					<div class="navbar navbar-inner youtube-toolbar nicer-ux clearfix">
 						<ul class="nav">
-							
+
 							<li class="divider-vertical"></li>
 
 							<li>
@@ -158,9 +87,9 @@
 							<li>
 								<button class="fullscreen"><i class="icon-fullscreen"></i></button>
 							</li>
-							
+
 							<li class="divider-vertical"></li>
-					
+
 							<li class="volume-master">
 								<button class="volume-toggle">
 									<i class="icon-volume-up"></i>
@@ -172,7 +101,7 @@
 							</li>
 
 							<li class="divider-vertical"></li>
-							
+
 							<li>
 								<button class="previous"><i class="icon-step-backward"></i></button>
 							</li>
@@ -192,11 +121,11 @@
 							<li>
 								<button class="next"><i class="icon-step-forward"></i></button>
 							</li>
-							
+
 							<li class="divider-vertical"></li>
-							
+
 						</ul>
-					
+
 						<ul class="nav">
 							<li>
 								<div class="current-track-info current-playlist-info pull-right">
@@ -211,7 +140,7 @@
 									</div>
 								</div>
 							</li>
-							
+
 							<li class="divider-vertical"></li>
 
 							<li>
@@ -231,44 +160,17 @@
 
 					</div>
 				</div>
-				
-			</div>
-		</div>
-		<div id="sidebar-menu-toggler" class="navbar">
-			<a class="btn btn-navbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
 
-		</div>
-		<!-- SIDEBAR -->
-		<div id="sidebar" class="sidebar sidebar-left-fixed well ux-maker closed">
-			<ul id="library-nav" class="nav nav-list nicer-ux">
-				<li class="nav-header">Library</li>
-				<li class="active"><a href="#explore"><i class="icon-music"></i>Explore</a></li>
-				<li><a href="#history"><i class="icon-time"></i>History</a></li>
-				<li><a href="#myPlaylists"><i class="icon-heart"></i>My Playlists</a></li>
-			</ul>
-			
-			<h3 class="nav-header">Playlists</h3>
-			<div class="sidebar-pane">
-				<ul id="user-playlists" class="nav nav-list ux-maker nicer-ux user-playlists"></ul>
 			</div>
-		
-		</div>
-		<div class="modal-backdrop sidebar-backdrop"></div>
-		
-		<div id="loader">
-			<i class="icon-refresh icon-spin icon-3x"></i>
+
 		</div>
 
 		<!-- MAIN CONTENT -->
 		<div class="container-fluid container-main">
-			
+
 
 			<div class="row-fluid">
-				
+
 				<div class="span12">
 					<!-- SEARCH RESULTS AREA -->
 					<div id="search-results" class="ux-maker search-results clearfix"></div>
@@ -282,35 +184,7 @@
 
 		</div>
 
-	<div id="notification" class="modal hide fade">
-	  <div class="modal-header">
-	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	    <h3>Notice - Before You Start Listening...</h3>
-	  </div>
-	  <div class="modal-body">
-	    <p>
-	    	To have the <span class="label label-success">BEST</span> experience, it is better to opt in to <a href="http://youtube.com/html5" target="_blank">youtube's html5 trial</a><br>
-	    	After joining Youtube's html5 trial, refresh this page.
-	    </p>
-	  </div>
-	  <div class="modal-footer">
-	    <button class="btn" data-dismiss="modal">Close</button>
-	    <button class="btn btn-primary dont-remind">OK, Don't remind me the next time</button>
-	  </div>
-	</div>
 
-	<div id="playlists-viewer" class="modal hide fade">
-	  <div class="modal-header"></div>
-	  <div class="modal-body">
-	  	<h3 class="sign-in-message">Please <a class="gsign-in" href="">sign in with your +google</a> to add videos to your playlists</h3>
-	  	<h5 class="title">Select a playlist to add the video to it</h5>
-	    <ul class="unstyled playlists user-playlist"></ul>
-	  </div>
-	  <div class="modal-footer">
-	    <button class="btn" data-dismiss="modal">Close</button>
-	  </div>
-	</div>
-	
 	<script data-main="js/config" src="js/libs/require/require.js"></script>
 	<script type="text/javascript">
 
@@ -324,5 +198,20 @@
 	    ga('send', 'pageview');
 
 	</script>
+  <script type="text/javascript" src="/cm/js/jquery.js"></script>
+  <script type="text/javascript" src="/cm/js/bootstrap.js"></script>
+  <script type="text/javascript" src="/cm/js/bootstrap-select.js"></script>
+  <script type="text/javascript" src="/cm/js/bootstrap-tagsinput.js"></script>
+  <script type="text/javascript" src="/cm/js/bootstrap-datepicker.js"></script>
+  <script type="text/javascript" src="/cm/js/locales/bootstrap-datepicker.es.js"></script>
+  <script type="text/javascript" src="/cm/js/typeahead.bundle.js"></script>
+  <script type="text/javascript" src="/js/underscore-min.js"></script>
+  <script type="text/javascript">
+    $('.selectpicker').selectpicker();
+    $('#sandbox-container input').datepicker({
+    format: "yyyy/mm/dd",
+    language: 'es'
+    });</script>
+  <script type="text/javascript" src="/cm/js/app.js"></script>
 </body>
 </html>

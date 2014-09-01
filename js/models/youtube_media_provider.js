@@ -6,7 +6,7 @@ define([
 	'./youtube/ProfileService',
 	'./youtube/playlist-items',
 	'collections/youtube/UserPlaylists'
-], function(_, Backbone, YoutubeItemInfo, 
+], function(_, Backbone, YoutubeItemInfo,
 	YoutubePlaylistInfoProvider,
 	ProfileService, history,
 	UserPlaylists
@@ -18,13 +18,13 @@ define([
 		playlists: new UserPlaylists(),
 		profile: new ProfileService(),
 		history: new history(),
-		
+
 		defaults: {
-			query: '',
+			query: 'Medellín vive la música',
 			startIndex: 1,
-			maxResults: 50,
+			maxResults: 10,
 			data: [],
-			
+
 			preset: '',
 			duration: '',
 
@@ -133,6 +133,6 @@ define([
 			}
 		}
 	});
-   
+
     return YoutubeMediaProvider;
 });
